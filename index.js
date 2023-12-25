@@ -1,3 +1,4 @@
+var a="0"
 document.querySelector(".b1").addEventListener("click",function(){
     document.querySelector(".b2").classList.remove("chosen");
     document.querySelector(".b3").classList.remove("chosen");
@@ -6,7 +7,8 @@ document.querySelector(".b1").addEventListener("click",function(){
     
     document.querySelector(".b1").classList.toggle("chosen");
     
-    document.querySelector(".wrapper p").textContent = "1";
+    //document.querySelector(".wrapper p").textContent = "1";
+    a="1";
 });
 
 document.querySelector(".b2").addEventListener("click",function(){
@@ -17,7 +19,8 @@ document.querySelector(".b2").addEventListener("click",function(){
     
     document.querySelector(".b2").classList.toggle("chosen");
 
-    document.querySelector(".wrapper p").textContent = "2";
+    //document.querySelector(".wrapper p").textContent = "2";
+    a="2";
 });
 
 document.querySelector(".b3").addEventListener("click",function(){
@@ -28,7 +31,8 @@ document.querySelector(".b3").addEventListener("click",function(){
     
     document.querySelector(".b3").classList.toggle("chosen");
 
-    document.querySelector(".wrapper p").textContent = "3";
+    //document.querySelector(".wrapper p").textContent = "3";
+    a="3";
 });
 
 document.querySelector(".b4").addEventListener("click",function(){
@@ -39,7 +43,8 @@ document.querySelector(".b4").addEventListener("click",function(){
     
     document.querySelector(".b4").classList.toggle("chosen");
 
-    document.querySelector(".wrapper p").textContent = "4";
+    //document.querySelector(".wrapper p").textContent = "4";
+    a="4";
 });
 
 document.querySelector(".b5").addEventListener("click",function(){
@@ -50,7 +55,8 @@ document.querySelector(".b5").addEventListener("click",function(){
    
     document.querySelector(".b5").classList.toggle("chosen");
 
-    document.querySelector(".wrapper p").textContent = "5";
+    //document.querySelector(".wrapper p").textContent = "5";
+    a="5"
 });
 
 
@@ -63,7 +69,7 @@ document.querySelector(".btn").addEventListener("click",function(){
 
     document.querySelector(".thanksImage").style.display="block";
     document.querySelector(".score_report").style.display="inline-block";
-    document.querySelector(".score_report p").textContent="You selected " + document.querySelector(".wrapper p").textContent + " out of 5";
+    document.querySelector(".score_report p").textContent="You selected " + a + " out of 5";
     document.querySelector(".thankYou").style.display="inline-block";
     document.querySelector(".conclusionPara").style.display="block";
 });
