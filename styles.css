@@ -67,7 +67,8 @@ p{
     transition: background-color 1s;
 }
 .option:hover{
-    background-color:hsl(217, 12%, 63%); 
+    background-color:hsl(217, 12%, 63%);
+    cursor: pointer; 
 }
 .option:hover p{
     color:#ffffff;
